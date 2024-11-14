@@ -32,9 +32,3 @@
 ## 3. 설계
 
 ## 4. 트러블슈팅
-1. 문제: Thymeleaf 적용 문제
-
-    + 상황: index.html의 Thymeleaf 문법 적용된 요소(header, footer)를 삭제해도 실행 시 그대로 나옴.
-    + 원인: 
-    + 해결 방법:
-        1. ㅇㅇ
