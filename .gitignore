@@ -35,3 +35,10 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### Example File ###
+/src/main/resources/static/aa/
+/src/main/resources/static/bootstrap-5.3.3-examples/
+
+### 임시 제외 ###
+/documents/

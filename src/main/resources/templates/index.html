@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko-KR" xmlns:th="http://www.thymeleaf.org">
+<head th:insert="~{fragments/header :: head}"></head>
+
+<body class="d-flex flex-column h-100 flex-shrink-0">
+<header th:replace="~{fragments/header :: header}"></header>
+  <!-- About Section-->
+  <section class="bg-light py-5">
+    <div class="container px-5">
+      <div class="row gx-5 justify-content-center">
+        <div class="col-xxl-8">
+          <div class="container px-4 text-center">
+            <div class="row g-1 justify-content-center">
+              <div class="col-5">
+                <input type="search" id="form1" class="form-control" />
+              </div>
+              <div class="col-1">
+                <button type="button" class="btn btn-warning"><i class="bi bi-search"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="my-5">
+            <div class="mb-4 border-bottom border-black">
+              <h3>인기 많은 장소</h3>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4 mb-4 crop-card text-center">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="/assets/default_image.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                      additional content. This content is a little bit longer.</p>
+                    <a href="#" class="stretched-link"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="/assets/default_image.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a short card.</p>
+                    <a href="#" class="stretched-link"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 crop-card">
+                  <img src="/assets/default_image.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                      additional content.</p>
+                    <a href="#" class="stretched-link"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="/assets/default_image.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                      additional content. This content is a little bit longer.</p>
+                    <a href="#" class="stretched-link"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="/assets/default_image.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                      additional content. This content is a little bit longer.</p>
+                    <a href="#" class="stretched-link"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="/assets/default_image.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                      additional content. This content is a little bit longer.</p>
+                    <a href="#" class="stretched-link"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="/assets/default_image.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                      additional content. This content is a little bit longer.</p>
+                    <a href="#" class="stretched-link"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="/assets/default_image.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                      additional content. This content is a little bit longer.</p>
+                    <a href="#" class="stretched-link"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="/assets/default_image.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                      additional content. This content is a little bit longer.</p>
+                    <a href="#" class="stretched-link"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <a href="#"><img src="/assets/more_contents1.png" alt="logo" width="150" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container px-5">
+        <div class="row gx-5 justify-content-center">
+          <div class="col-md-4 list-group list-group-flush">
+            <a href="#" class="index-list list-group-item bg-light fw-bold">게시판</a>
+            <a href="#" class="index-list list-group-item bg-light" style="border:none;">An item</a>
+            <a href="#" class="index-list list-group-item bg-light" style="border:none;">An item</a>
+            <a href="#" class="index-list list-group-item bg-light" style="border:none;">An item</a>
+            <a href="#" class="index-list list-group-item bg-light" style="border:none;">An item</a>
+            <a href="#" class="index-list list-group-item bg-light" style="border:none;">An item</a>
+          </div>
+          <div class="col-md-4 list-group list-group-flush">
+            <a href="#" class="list-group-item bg-light fw-bold">공지사항</a>
+            <a href="#" class="index-list list-group-item bg-light" style="border:none;">An item</a>
+            <a href="#" class="index-list list-group-item bg-light" style="border:none;">An item</a>
+            <a href="#" class="index-list list-group-item bg-light" style="border:none;">An item</a>
+            <a href="#" class="index-list list-group-item bg-light" style="border:none;">An item</a>
+            <a href="#" class="index-list list-group-item bg-light" style="border:none;">An item</a>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- Footer-->
+  <footer th:replace="~{fragments/footer :: footer}"></footer>
+</body>
+<!-- Bootstrap core JS-->
+<script src="/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="/js/scripts.js"></script>
+</html>

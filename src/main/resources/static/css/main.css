@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/*
+    메인색상 : #44DCCF
+*/
+
+body,
+html {
+    height: 100%;
+}
+
+.bg-gradient-primary-to-secondary {
+    background: #1e30f3;
+    background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+}
+
+.text-gradient {
+    background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.rounded-4 {
+    border-radius: 1rem !important;
+}
+
+.feature {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+}
+
+.index-list{
+    white-space : nowrap;
+    overflow : hidden;
+    text-overflow: ellipsis;
+}
+
+.crop-card{
+    img {
+        height: 24vh;
+        object-fit: cover;
+    }
+}
+
+
