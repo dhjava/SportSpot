@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko-KR" xmlns:th="http://www.thymeleaf.org">
+
+<head th:insert="~{fragments/header :: head}"></head>
+
+<body class="d-flex flex-column h-100 flex-shrink-0">
+    <header th:replace="~{fragments/header :: header}"></header>
+    <!-- About Section-->
+    <section class="pt-5">
+        <div class="container px-5 facility-list">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-xxl-10">
+                    <div class="container px-4 text-center">
+                        <div class="row g-1 justify-content-center">
+                            <div class="col-5">
+                                <input type="search" id="form1" class="form-control" />
+                            </div>
+                            <div class="col-1">
+                                <button type="button" class="btn btn-warning"><i class="bi bi-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-5">
+                        <h3>시설 목록</h3>
+                    </div>
+                    <div class="my-1 border-top border-bottom">
+                        <div class="my-3 d-flex mb-3">
+                            <div class="col-5 col-lg-3 p-2">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>시/도</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col-5 col-lg-3 p-2">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>시/군/구</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-2 border-bottom">
+                        <div class="ms-auto text-end p-2 align-self-center">
+                            <a href="#" class="link-secondary">최신순</a>
+                            <a href="#" class="link-secondary">조회수순</a>
+                        </div>
+                    </div>
+                    <div class="container my-3">
+                        <div>
+                            <div class="row">
+                                <div class="col-12 col-lg-6 mb-4 py-1 h-100 d-flex flex-shrink-0 position-relative">
+                                    <img src="/assets/default_image.jpg" class="flex-shrink-0 me-3" alt="..." style="height:115px;">
+                                    <div style="height:120px;">
+                                        <h5 class="mt-0"><a href="#" class="link-dark stretched-link" style="font-weight:bold">아무풋살장</a></h5>
+                                        <span class="ellipsis">전북 전주시<br></span>
+                                        <span class="ellipsis">09:00 ~ 21:00(일요일 휴무)<br></span>
+                                        <span class="ellipsis">010-1234-5678</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6 mb-4 py-1 h-100 d-flex flex-shrink-0 position-relative">
+                                    <img src="/assets/default_image.jpg" class="flex-shrink-0 me-3" alt="..." style="height:115px;">
+                                    <div style="height:120px;">
+                                        <h5 class="mt-0"><a href="#" class="link-dark stretched-link" style="font-weight:bold">아무풋살장</a></h5>
+                                        <span class="ellipsis">전북 전주시<br></span>
+                                        <span class="ellipsis">09:00 ~ 21:00(일요일 휴무)<br></span>
+                                        <span class="ellipsis">010-1234-5678</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer th:replace="~{fragments/footer :: footer}"></footer>
+</body>
+<!-- Bootstrap core JS-->
+<script src="/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="/js/scripts.js"></script>
+
+</html>
