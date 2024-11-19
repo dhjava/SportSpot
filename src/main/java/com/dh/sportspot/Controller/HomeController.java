@@ -11,9 +11,4 @@ public class HomeController {
         return "index";
     }
 
-    @GetMapping("/layout")
-    public String layout() {
-        return "facilities/layout";
-    }
-
 }

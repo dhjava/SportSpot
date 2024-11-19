@@ -7,7 +7,12 @@
 body,
 html {
     height: 100%;
+
+    a{
+        text-decoration: none;
+    }
 }
+
 
 .bg-gradient-primary-to-secondary {
     background: #1e30f3;
@@ -41,9 +46,18 @@ html {
 
 .crop-card{
     img {
-        height: 24vh;
+        height: 180px;
         object-fit: cover;
     }
 }
+
+.ellipsis {
+    display: inline-block; /* 특정 너비를 가지도록 상황에 따라 block or inline-block 으로 변경 */
+    width: 240px; /* inline-block처럼 콘텐츠에 따라 유동적인 너비를 가진다면 직접 너비를 설정 */
+    overflow: hidden; /* 넘치는 부분 가리기 */
+    text-overflow: ellipsis; /* ... 처리하기 */
+    white-space: nowrap; /* 줄바꿈 안하기 (한 줄 밑줄임표 적용) */
+}
+
 
 
