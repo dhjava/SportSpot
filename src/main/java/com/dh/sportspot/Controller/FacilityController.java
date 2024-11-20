@@ -16,4 +16,14 @@ public class FacilityController {
     public String view() {
         return "facility/futsal/view";
     }
+
+    @GetMapping("/futsal/write")
+    public String write() {
+        return "facility/futsal/write";
+    }
+
+    @GetMapping("/futsal/modify")
+    public String modify() {
+        return "facility/futsal/modify";
+    }
 }

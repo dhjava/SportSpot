@@ -10,22 +10,32 @@
         <div class="container px-5 facility-list">
             <div class="row gx-5 justify-content-center">
                 <div class="col-xxl-10">
+                    <!-- 검색창 -->
                     <div class="container px-4 text-center">
                         <div class="row g-1 justify-content-center">
                             <div class="col-9 col-md-5">
                                 <input type="search" id="form1" class="form-control" />
                             </div>
                             <div class="col-1">
-                                <button type="button" class="btn btn-warning" style="color:navy"><i class="bi bi-search"></i></button>
+                                <button type="button" class="btn btn-warning"><i class="bi bi-search"></i></button>
                             </div>
                         </div>
                     </div>
+
+                    <!-- 시설 목록 -->
                     <div class="my-5">
                         <h3 class="me-3" style="display:inline;">시설 목록</h3>
                         <h4 style="display:inline;">
                             <a th:href="@{/facility/futsal/list}" class="link-secondary">풋살장</a>
                         </h4>
                     </div>
+
+                    <!-- 등록 버튼 -->
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end mb-4">
+                        <a th:href="@{/facility/futsal/write}" class="btn btn-warning" role="button">등록하기</a>
+                    </div>
+
+                    <!-- 지역 검색 -->
                     <div class="my-1 border-top border-bottom">
                         <div class="my-3 d-flex mb-3">
                             <div class="col-6 col-lg-3 p-1">
@@ -46,14 +56,17 @@
                             </div>
                         </div>
                     </div>
+                    <!-- 최신순 조회수순 정렬 -->
                     <div class="py-2 border-bottom">
                         <div class="ms-auto text-end p-2 align-self-center">
                             <a href="#" class="link-secondary me-2">최신순</a>
                             <a href="#" class="link-secondary">조회수순</a>
                         </div>
                     </div>
+
+                    <!-- 시설 리스트 -->
                     <div class="container my-3">
-                        <div>
+                        <div class="mb-3">
                             <div class="row">
                                 <div class="col-12 col-lg-6 mb-4 py-1 h-100 d-flex flex-shrink-0 position-relative">
                                     <a th:href="@{/facility/futsal/view}"><img src="/assets/default_image.jpg" class="flex-shrink-0 me-3" alt="..."></a>
@@ -79,27 +92,48 @@
                                         <a href="#" class="link-dark"><i class="bi bi-three-dots-vertical"></i></a>
                                     </div>
                                 </div>
+                                <div class="col-12 col-lg-6 mb-4 py-1 h-100 d-flex flex-shrink-0 position-relative">
+                                    <a th:href="@{/facility/futsal/view}"><img src="/assets/default_image.jpg" class="flex-shrink-0 me-3" alt="..."></a>
+                                    <div style="height:120px;">
+                                        <h5 class="mt-0"><a th:href="@{/facility/futsal/view}" class="link-dark" style="font-weight:bold">아무풋살장</a></h5>
+                                        <span class="ellipsis">전북 전주시<br></span>
+                                        <span class="ellipsis">09:00 ~ 21:00(일요일 휴무)<br></span>
+                                        <span class="ellipsis">010-1234-5678</span>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="link-dark"><i class="bi bi-three-dots-vertical"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6 mb-4 py-1 h-100 d-flex flex-shrink-0 position-relative">
+                                    <a th:href="@{/facility/futsal/view}"><img src="/assets/default_image.jpg" class="flex-shrink-0 me-3" alt="..."></a>
+                                    <div style="height:120px;">
+                                        <h5 class="mt-0"><a th:href="@{/facility/futsal/view}" class="link-dark" style="font-weight:bold">아무풋살장</a></h5>
+                                        <span class="ellipsis">전북 전주시<br></span>
+                                        <span class="ellipsis">09:00 ~ 21:00(일요일 휴무)<br></span>
+                                        <span class="ellipsis">010-1234-5678</span>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="link-dark"><i class="bi bi-three-dots-vertical"></i></a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="d-grid gap-2 d-md-flex justify-content-md-end mb-4">
-                                <button class="btn btn-warning" style="color:navy" type="button">등록하기</button>
-                            </div>
-                            <div>
-                                <ul class="pagination justify-content-center">
-                                    <li class="page-item">
-                                        <a class="page-link" href="#" aria-label="Previous">
-                                            <span aria-hidden="true">&laquo;</span>
-                                        </a>
-                                    </li>
-                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#" aria-label="Next">
-                                            <span aria-hidden="true">&raquo;</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                        </div>
+                        <div>
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>

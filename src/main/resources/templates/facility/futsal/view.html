@@ -10,12 +10,15 @@
         <div class="container px-5">
             <div class="row gx-5 justify-content-center facility-view">
                 <div class="col-xxl-9">
-                    <div class="my-5">
+                    <!-- 제목 라인 -->
+                    <div class="mb-5">
                         <h3 class="me-3" style="display:inline;">시설 목록</h3>
                         <h4 style="display:inline;">
                             <a th:href="@{/facility/futsal/list}" class="link-secondary">풋살장</a>
                         </h4>
                     </div>
+
+                    <!-- 상세 정보 -->
                     <div class="mt-4 text-center">
                         <h2 class="mb-2" style="font-weight:bold;">아무풋살장</h2>
                         <h5 style="color:gray;">전북 전주시</h5>
@@ -107,9 +110,11 @@
                         </div>
                     </div>
                     <div class="mb-5 text-end">
-                        <button type="button" class="btn btn-outline-warning">목록</button>
-                        <button type="button" class="btn btn-warning">수정하기</button>
+                        <a th:href="@{/facility/futsal/list}" class="btn btn-outline-warning" role="button">목록</a>
+                        <a th:href="@{/facility/futsal/modify}" class="btn btn-warning" role="button">수정하기</a>
                     </div>
+
+                    <!-- 댓글창 -->
                     <div class="mb-3">
                         <div class="mb-3">
                             <h3 style="font-weight:bold">댓글&nbsp;<span style="color:#682699">0</span></h3>
