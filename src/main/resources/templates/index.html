@@ -12,11 +12,11 @@
         <div class="col-xxl-9">
           <div class="container px-4 text-center">
             <div class="row g-1 justify-content-center">
-              <div class="col-6">
+              <div class="col-9 col-md-5">
                 <input type="search" id="form1" class="form-control" />
               </div>
               <div class="col-1">
-                <button type="button" class="btn btn-warning"><i class="bi bi-search"></i></button>
+                <button type="button" class="btn btn-warning" style="color:navy"><i class="bi bi-search"></i></button>
               </div>
             </div>
           </div>
@@ -125,7 +125,7 @@
               </div>
             </div>
             <div class="text-center">
-              <a href="#"><img src="/assets/more_contents1.png" alt="logo" width="150" /></a>
+              <a th:href="@{/facility/list}"><img src="/assets/more_contents1.png" alt="logo" width="150" /></a>
             </div>
           </div>
         </div>
@@ -150,6 +150,7 @@
           </div>
         </div>
       </div>
+    </div>
   </section>
   <!-- Footer-->
   <footer th:replace="~{fragments/footer :: footer}"></footer>

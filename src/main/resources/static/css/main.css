@@ -51,12 +51,74 @@ html {
     }
 }
 
-.ellipsis {
-    display: inline-block; /* 특정 너비를 가지도록 상황에 따라 block or inline-block 으로 변경 */
-    width: 240px; /* inline-block처럼 콘텐츠에 따라 유동적인 너비를 가진다면 직접 너비를 설정 */
-    overflow: hidden; /* 넘치는 부분 가리기 */
-    text-overflow: ellipsis; /* ... 처리하기 */
-    white-space: nowrap; /* 줄바꿈 안하기 (한 줄 밑줄임표 적용) */
+.facility-list{
+    .ellipsis {
+        display: inline-block; /* 특정 너비를 가지도록 상황에 따라 block or inline-block 으로 변경 */
+        width: 14.375em; /* inline-block처럼 콘텐츠에 따라 유동적인 너비를 가진다면 직접 너비를 설정 */
+        overflow: hidden; /* 넘치는 부분 가리기 */
+        text-overflow: ellipsis; /* ... 처리하기 */
+        white-space: nowrap; /* 줄바꿈 안하기 (한 줄 밑줄임표 적용) */
+        font-size: 0.9em;
+    }
+
+    img{
+        height:7.1875rem;
+        object-fit: cover;
+    }
+}
+
+.page-item .page-link {
+    color: #000000;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #000000;
+    background-color: #ffc107;
+    border-color: #ccc;
+}
+
+.page-item .page-link:focus{
+    z-index: 3;
+    color: #000;
+    outline: 0;
+    background-color: #fafafa;
+    border-color: #ccc;
+}
+
+.page-link:hover {
+    z-index: 2;
+    color: #000;
+    background-color: #fafafa;
+    border-color: #ccc;
+}
+
+@media all and (max-width:576px){
+    .facility-list{
+        img{
+            width: 100px;
+        }
+        h5{
+            font-size:1.1em;
+        }
+        .ellipsis {
+            display: inline-block; /* 특정 너비를 가지도록 상황에 따라 block or inline-block 으로 변경 */
+            width: 13em; /* inline-block처럼 콘텐츠에 따라 유동적인 너비를 가진다면 직접 너비를 설정 */
+            overflow: hidden; /* 넘치는 부분 가리기 */
+            text-overflow: ellipsis; /* ... 처리하기 */
+            white-space: nowrap; /* 줄바꿈 안하기 (한 줄 밑줄임표 적용) */
+            font-size: 0.7em;
+        }
+    }
+}
+
+.facility-view{
+    img{
+        max-height: 450px;
+        object-fit: contain;
+    }
 }
 
 
