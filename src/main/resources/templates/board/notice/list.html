@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko-KR" xmlns:th="http://www.thymeleaf.org">
+
+<head th:insert="~{fragments/header :: head}"></head>
+
+<body class="d-flex flex-column h-100 flex-shrink-0">
+    <header th:replace="~{fragments/header :: header}"></header>
+    <!-- About Section-->
+    <section class="pt-5">
+        <div class="container px-5">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-xxl-9">
+                    <!-- 제목 라인 -->
+                    <div class="mb-3">
+                        <h3>
+                            <a th:href="@{'list'}" class="link-dark">공지사항</a>
+                        </h3>
+                    </div>
+
+                    <!-- 글쓰기 버튼 -->
+                    <div class="d-flex justify-content-end mb-3">
+                        <a th:href="@{'write'}" class="btn btn-warning" role="button">글쓰기</a>
+                    </div>
+
+                    <!-- 게시판 목록 -->
+                    <div>
+                        <table class="table custom-table">
+                            <thead>
+                            <tr>
+                                <th scope="col" class="col-1">No</th>
+                                <th scope="col" class="col-6">제목</th>
+                                <th scope="col" class="col-2">작성자</th>
+                                <th scope="col" class="col-2">작성일</th>
+                                <th scope="col" class="col-1">조회</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row" class="fw-normal align-middle">3</th>
+                                <td><a th:href="@{'view'}" class="link-dark">안녕하십니까 저는 트위치에서</a></td>
+                                <td class="text-center">Otto</td>
+                                <td class="text-center">@mdo</td>
+                                <td class="text-center">123</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="fw-normal align-middle">3</th>
+                                <td>Mark</td>
+                                <td class="text-center">Otto</td>
+                                <td class="text-center">@mdo</td>
+                                <td class="text-center">123</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="fw-normal align-middle">3</th>
+                                <td>Mark</td>
+                                <td class="text-center">Otto</td>
+                                <td class="text-center">@mdo</td>
+                                <td class="text-center">123</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div>
+                            <ul class="pagination pagination-sm justify-content-center">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer th:replace="~{fragments/footer :: footer}"></footer>
+</body>
+<!-- Bootstrap core JS-->
+<script src="/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="/js/scripts.js"></script>
+
+</html>

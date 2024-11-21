@@ -121,5 +121,26 @@ html {
     }
 }
 
+.custom-table{
+    font-size: 13px;
+
+    thead {
+        border-top: 3px solid black;
+    }
+
+    th{
+        text-align:center;
+    }
+
+}
+
+@media all and (max-width:576px) {
+    .custom-table {
+        font-size: 9px;
+        th{
+            font-size: 8px;
+        }
+    }
+}
 
 

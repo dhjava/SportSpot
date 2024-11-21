@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko-KR" xmlns:th="http://www.thymeleaf.org">
+
+<head th:insert="~{fragments/header :: head}"></head>
+
+<body class="d-flex flex-column h-100 flex-shrink-0">
+    <header th:replace="~{fragments/header :: header}"></header>
+    <!-- About Section-->
+    <section class="pt-5">
+        <div class="container px-5">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-xxl-9">
+                    <!-- 제목 라인 -->
+                    <div class="mb-3">
+                        <h3>
+                            <a th:href="@{'list'}" class="link-dark">자유게시판</a>
+                        </h3>
+                    </div>
+
+                    <!-- 상세 정보 -->
+                    <div class="mb-3 text-center text-md-end">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-outline-dark"><i class="bi bi-exclamation-octagon"></i></button>
+                            <button type="button" class="btn btn-outline-dark"><i class="bi bi-share"></i></button>
+                        </div>
+                    </div>
+                    <div class="mb-1">
+                        <div class="row border-top border-bottom">
+                            <div class="my-1">
+                                <div class="fs-5">안녕하십니까 저는 트위치에서 방송을 하고 있는 스트리머 케인이라고 합니다</div>
+                            </div>
+                            <div class="my-1">
+                                <div>
+                                    <div>최진우</div>
+                                </div>
+                            </div>
+                            <div class="row text-secondary">
+                                <div class="col-4 col-lg-2 my-1">
+                                    <div><i class="bi bi-eye"></i></i><span>&nbsp;41&nbsp;</span>
+                                        <i class="bi bi-chat-dots"></i><span>&nbsp;2</span>
+                                    </div>
+                                </div>
+                                <div class="col-8 col-lg-10 my-1">
+                                    <div class="text-end">
+                                        <i class="bi bi-clock"></i><span>&nbsp;2024.11.21 16:07</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-bottom">
+                            <div class="py-3" style="min-height: 100px;">
+                                안녕하십니까 저는 은평구에 살고 있는 트위치 스트리머 케인입니다. 먼저 저의 언행에 피해를 입으신 분들께 대단히 죄송합니다. 지금부터는
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-5 text-end">
+                        <a th:href="@{'list'}" class="btn btn-outline-warning" role="button">목록</a>
+                        <a th:href="@{'modify'}" class="btn btn-warning" role="button">수정하기</a>
+                    </div>
+
+                    <!-- 댓글창 -->
+                    <div class="mb-3">
+                        <div class="mb-3">
+                            <h3 style="font-weight:bold">댓글&nbsp;<span style="color:#682699">0</span></h3>
+                        </div>
+                        <div class="mb-3 bg-light text-dark">
+                            <div class="d-flex justify-content-center py-3">
+                                <textarea class="form-control" style="width:90%" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="text-end px-5 pb-3">
+                                <button type="button" class="btn btn-warning">댓글 작성</button>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="mb-4 pb-4 border-bottom">
+                                <div style="--bs-breadcrumb-divider: '|';" aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="fw-bold breadcrumb-item">김철수</a></li>
+                                        <li class="fw-light breadcrumb-item">2024-11-20 11:47</li>
+                                    </ol>
+                                </div>
+                                <div>
+                                    오옹 나이스
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">더보기 +</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer th:replace="~{fragments/footer :: footer}"></footer>
+</body>
+<!-- Bootstrap core JS-->
+<script src="/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="/js/scripts.js"></script>
+
+</html>
