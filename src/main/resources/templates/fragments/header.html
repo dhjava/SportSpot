@@ -35,17 +35,51 @@
                         class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                        <li class="nav-item"><a class="nav-link" th:href="@{/facility/futsal/list}">시설목록</a></li>
-                        <li class="nav-item"><a class="nav-link" th:href="@{/board/free/list}">게시판</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/projects.html">마이페이지</a></li>
+                        <!-- 시설목록 -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="facilityMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                시설목록
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="facilityMenu">
+                                <li><a class="dropdown-item" th:href="@{/facility/futsal/list}">풋살장</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- 게시판 -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="boardMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                게시판
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="boardMenu">
+                                <li><a class="dropdown-item" th:href="@{/board/free/list}">자유게시판</a></li>
+                                <li><a class="dropdown-item" th:href="@{/board/notice/list}">공지사항</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- 마이페이지 -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="mypageMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                마이페이지
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="mypageMenu">
+                                <li><a class="dropdown-item" href="/profile.html">프로필</a></li>
+                                <li><a class="dropdown-item" href="/settings.html">설정</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                    <ul class="navbar-nav mb-2 mb-lg-0 small fw-bolder">
-                        <li class="nav-item"><a class="nav-link" href="index.html">로그인</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/resume.html">회원가입</a></li>
+
+                    <!-- 로그인 및 회원가입 버튼 (하나의 그룹으로 통합) -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder d-flex flex-row">
+                        <li class="nav-item me-3">
+                            <a class="nav-link" th:href="@{/member/login}">로그인</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" th:href="@{/member/signup}">회원가입</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-
+</body>
 </html>

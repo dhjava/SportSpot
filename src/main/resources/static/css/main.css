@@ -12,7 +12,19 @@ html {
         text-decoration: none;
     }
 }
+header {
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+    }
 
+    .nav-item.dropdown .dropdown-menu {
+        display: none;
+    }
+
+    .dropdown-toggle::after {
+        display: none;
+    }
+}
 
 .bg-gradient-primary-to-secondary {
     background: #1e30f3;

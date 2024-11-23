@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko-KR" xmlns:th="http://www.thymeleaf.org">
+
+<head th:insert="~{fragments/header :: head}"></head>
+
+<body class="d-flex flex-column h-100 flex-shrink-0">
+    <header th:replace="~{fragments/header :: header}"></header>
+    <!-- About Section-->
+    <section class="pt-5">
+        <div class="container px-5">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-md-6 col-lg-5">
+                    <h2 class="mb-4 text-center">아이디 찾기</h2>
+                    <form>
+                        <!-- 이메일 -->
+                        <div class="mb-3">
+                            <label for="uMail" class="form-label">이메일</label>
+                            <input type="email" class="form-control" id="uMail" placeholder="가입 시 등록한 이메일" required>
+                        </div>
+                        <!-- 인증 요청 버튼 -->
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-warning">아이디 찾기</button>
+                        </div>
+                    </form>
+                    <!-- 로그인 및 회원가입 링크 -->
+                    <p class="mt-3 text-center">
+                        <a th:href="@{'login'}">로그인</a> 또는 <a th:href="@{'signup'}">회원가입</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer th:replace="~{fragments/footer :: footer}"></footer>
+</body>
+<!-- Bootstrap core JS-->
+<script src="/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="/js/scripts.js"></script>
+
+</html>
