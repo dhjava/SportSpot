@@ -4,125 +4,125 @@
 <head th:insert="~{fragments/header :: head}"></head>
 
 <body class="d-flex flex-column h-100 flex-shrink-0">
-    <header th:replace="~{fragments/header :: header}"></header>
-    <!-- About Section-->
-    <section class="pt-5">
-        <div class="container px-5">
-            <div class="row gx-5 justify-content-center">
-                <div class="col-md-6 col-lg-5 col-xxl-4">
-                    <h2 class="mb-4 text-center">SportSpot 회원가입</h2>
-                    <form>
-                        <!-- 아이디 -->
-                        <div class="mb-3">
-                            <label for="uId" class="form-label">아이디</label>
-                            <input type="text" class="form-control" id="uId" placeholder="아이디를 입력하세요" required>
-                        </div>
-                        <!-- 비밀번호 -->
-                        <div class="mb-3">
-                            <label for="uPw" class="form-label">비밀번호</label>
-                            <input type="password" class="form-control" id="uPw" placeholder="비밀번호를 입력하세요" required>
-                        </div>
-                        <!-- 비밀번호 확인 -->
-                        <div class="mb-3">
-                            <label for="confirmuPw" class="form-label">비밀번호 확인</label>
-                            <input type="password" class="form-control" id="confirmuPw" placeholder="비밀번호를 다시 입력하세요" required>
-                        </div>
-                        <!-- 닉네임 -->
-                        <div class="mb-3">
-                            <label for="uNickName" class="form-label">닉네임</label>
-                            <input type="text" class="form-control" id="uNickName" placeholder="닉네임을 입력하세요" required>
-                        </div>
-                        <!-- 이메일 -->
-                        <div class="mb-3">
-                            <label for="uMail" class="form-label">이메일</label>
-                            <input type="email" class="form-control" id="uMail" placeholder="이메일을 입력하세요" required>
-                        </div>
-                        <!-- 전화번호 -->
-                        <div class="mb-3">
-                            <label for="uPhone" class="form-label">닉네임</label>
-                            <input type="text" class="form-control" id="uPhone" placeholder="전화번호를 입력하세요" required>
-                        </div>
-                        <!-- 지역 선택 -->
-                        <div class="mb-3">
-                            <label for="regionSelect" class="form-label">지역</label>
-                            <div class="row g-2">
-                                <!-- 첫 번째 select -->
-                                <div class="col-6">
-                                    <select class="form-select" id="regionSelect" aria-label="시/도 선택" required>
-                                        <option value="" selected disabled>시/도</option> <!-- value="" 추가 -->
-                                        <option value="1">서울</option>
-                                        <option value="2">부산</option>
-                                        <option value="3">대구</option>
-                                    </select>
-                                </div>
-                                <!-- 두 번째 select -->
-                                <div class="col-6">
-                                    <select class="form-select" aria-label="시/군/구 선택" required>
-                                        <option value="" selected disabled>시/군/구</option> <!-- value="" 추가 -->
-                                        <option value="1">강남구</option>
-                                        <option value="2">서초구</option>
-                                        <option value="3">동대문구</option>
-                                    </select>
-                                </div>
+<header th:replace="~{fragments/header :: header}"></header>
+<!-- About Section-->
+<section class="pt-5">
+    <div class="container px-5">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-md-7 col-lg-6 col-xxl-5 bg-light">
+                <h2 class="my-4 text-center">SportSpot 회원가입</h2>
+                <form>
+                    <!-- 아이디 -->
+                    <div class="mb-3">
+                        <label for="uId" class="form-label">아이디</label>
+                        <input type="text" class="form-control" id="uId" placeholder="아이디를 입력하세요" required>
+                    </div>
+                    <!-- 비밀번호 -->
+                    <div class="mb-3">
+                        <label for="uPw" class="form-label">비밀번호</label>
+                        <input type="password" class="form-control" id="uPw" placeholder="비밀번호를 입력하세요" required>
+                    </div>
+                    <!-- 비밀번호 확인 -->
+                    <div class="mb-3">
+                        <label for="confirmuPw" class="form-label">비밀번호 확인</label>
+                        <input type="password" class="form-control" id="confirmuPw" placeholder="비밀번호를 다시 입력하세요" required>
+                    </div>
+                    <!-- 닉네임 -->
+                    <div class="mb-3">
+                        <label for="uNickName" class="form-label">닉네임</label>
+                        <input type="text" class="form-control" id="uNickName" placeholder="닉네임을 입력하세요" required>
+                    </div>
+                    <!-- 이메일 -->
+                    <div class="mb-3">
+                        <label for="uMail" class="form-label">이메일</label>
+                        <input type="email" class="form-control" id="uMail" placeholder="이메일을 입력하세요" required>
+                    </div>
+                    <!-- 전화번호 -->
+                    <div class="mb-3">
+                        <label for="uPhone" class="form-label">전화번호</label>
+                        <input type="text" class="form-control" id="uPhone" placeholder="전화번호를 입력하세요" required>
+                    </div>
+                    <!-- 지역 선택 -->
+                    <div class="mb-3">
+                        <label for="regionSelect" class="form-label">지역</label>
+                        <div class="row g-2">
+                            <!-- 첫 번째 select -->
+                            <div class="col-6">
+                                <select class="form-select" id="regionSelect" aria-label="시/도 선택" required>
+                                    <option value="" selected disabled>시/도</option> <!-- value="" 추가 -->
+                                    <option value="1">서울</option>
+                                    <option value="2">부산</option>
+                                    <option value="3">대구</option>
+                                </select>
+                            </div>
+                            <!-- 두 번째 select -->
+                            <div class="col-6">
+                                <select class="form-select" aria-label="시/군/구 선택" required>
+                                    <option value="" selected disabled>시/군/구</option> <!-- value="" 추가 -->
+                                    <option value="1">강남구</option>
+                                    <option value="2">서초구</option>
+                                    <option value="3">동대문구</option>
+                                </select>
                             </div>
                         </div>
-                        <!-- 이용약관 체크박스 -->
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="terms" required>
-                            <label class="form-check-label" for="terms">
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal" data-content="terms">이용약관</a> 및
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal" data-content="privacy">개인정보 처리방침</a>에 동의합니다.
-                            </label>
-                        </div>
+                    </div>
+                    <!-- 이용약관 체크박스 -->
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="terms" required>
+                        <label class="form-check-label" for="terms">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal" data-content="terms">이용약관</a> 및
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal" data-content="privacy">개인정보 처리방침</a>에 동의합니다.
+                        </label>
+                    </div>
 
-                        <!-- Modal -->
-                        <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="termsModalLabel">약관 및 개인정보 처리방침</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body" id="termsContent">
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
-                                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="termsModalLabel">약관 및 개인정보 처리방침</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" id="termsContent">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
                                 </div>
                             </div>
                         </div>
-                        <!-- 제출 버튼 -->
-                        <div class="d-grid">
-                            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#signupCompleteModal">회원가입</button>
-                        </div>
-                        <!-- 가입 완료 모달 -->
-                        <div class="modal fade" id="signupCompleteModal" tabindex="-1" aria-labelledby="signupCompleteModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="signupCompleteModalLabel">회원가입 완료</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        회원가입이 완료되었습니다! <br> <strong>SportSpot</strong>에 오신 것을 환영합니다.
-                                    </div>
-                                    <div class="modal-footer">
-                                        <a href="/" class="btn btn-primary">확인</a>
-                                    </div>
+                    </div>
+                    <!-- 제출 버튼 -->
+                    <div class="d-grid">
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#signupCompleteModal">회원가입</button>
+                    </div>
+                    <!-- 가입 완료 모달 -->
+                    <div class="modal fade" id="signupCompleteModal" tabindex="-1" aria-labelledby="signupCompleteModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="signupCompleteModalLabel">회원가입 완료</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    회원가입이 완료되었습니다! <br> <strong>SportSpot</strong>에 오신 것을 환영합니다.
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="/" class="btn btn-primary">확인</a>
                                 </div>
                             </div>
                         </div>
-                    </form>
-                    <!-- 로그인 링크 -->
-                    <p class="mt-3 text-center">
-                        이미 계정이 있으신가요? <a th:href="@{'login'}">로그인</a>
-                    </p>
-                </div>
+                    </div>
+                </form>
+                <!-- 로그인 링크 -->
+                <p class="mt-3 text-center">
+                    이미 계정이 있으신가요? <a th:href="@{'login'}">로그인</a>
+                </p>
             </div>
         </div>
-    </section>
-    <!-- Footer-->
-    <footer th:replace="~{fragments/footer :: footer}"></footer>
+    </div>
+</section>
+<!-- Footer-->
+<footer th:replace="~{fragments/footer :: footer}"></footer>
 </body>
 <!-- Bootstrap core JS-->
 <script src="/js/bootstrap.bundle.min.js"></script>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko-KR" xmlns:th="http://www.thymeleaf.org">
+
+<head th:insert="~{fragments/header :: head}"></head>
+
+<body class="d-flex flex-column h-100 flex-shrink-0">
+    <header th:replace="~{fragments/header :: header}"></header>
+    <!-- About Section-->
+    <section class="pt-4">
+        <div class="container px-5">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-xxl-9 mypage">
+                    <!-- 제목 -->
+                    <div class="my-5">
+                        <h3 class="me-3" style="display:inline;">마이페이지</h3>
+                        <h4 style="display:inline;">
+                            <a th:href="@{'bookmark'}" class="link-secondary">북마크</a>
+                        </h4>
+                    </div>
+
+                    <div th:replace="~{fragments/mypage-nav}"></div>
+                    <!-- 컨텐츠 -->
+                    <main class="col-md-8 col-lg-9 d-flex flex-column justify-content-center align-items-center">
+                        <!-- 시설 리스트 -->
+                        <div class="container my-3 facility-list">
+                            <div class="mb-3">
+                                <div class="row mx-2">
+                                    <div class="mb-4 py-1 h-100 d-flex flex-shrink-0 position-relative">
+                                        <a th:href="@{/facility/futsal/view}">
+                                            <img src="/assets/default_image.jpg" class="flex-shrink-0 me-3" alt="..." style="flex-grow: 1;">
+                                        </a>
+                                        <div style="height:120px; flex-grow: 1;">
+                                            <h5 class="mt-0">
+                                                <a th:href="@{/facility/futsal/view}" class="link-dark" style="font-weight:bold">아무풋살장</a>
+                                            </h5>
+                                            <span class="ellipsis" style="display: block;">전북 전주시</span>
+                                            <span class="ellipsis" style="display: block;">09:00 ~ 21:00(일요일 휴무)</span>
+                                            <span class="ellipsis" style="display: block;">010-1234-5678</span>
+                                        </div>
+                                        <div style="flex-grow: 1;">
+                                            <a href="#" class="link-dark"><i class="bi bi-three-dots-vertical"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="mb-4 py-1 h-100 d-flex flex-shrink-0 position-relative">
+                                        <a th:href="@{/facility/futsal/view}">
+                                            <img src="/assets/default_image.jpg" class="flex-shrink-0 me-3" alt="..." style="flex-grow: 1;">
+                                        </a>
+                                        <div style="height:120px; flex-grow: 1;">
+                                            <h5 class="mt-0">
+                                                <a th:href="@{/facility/futsal/view}" class="link-dark" style="font-weight:bold">아무풋살장</a>
+                                            </h5>
+                                            <span class="ellipsis" style="display: block;">전북 전주시</span>
+                                            <span class="ellipsis" style="display: block;">09:00 ~ 21:00(일요일 휴무)</span>
+                                            <span class="ellipsis" style="display: block;">010-1234-5678</span>
+                                        </div>
+                                        <div style="flex-grow: 1;">
+                                            <a href="#" class="link-dark"><i class="bi bi-three-dots-vertical"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer th:replace="~{fragments/footer :: footer}"></footer>
+</body>
+<!-- Bootstrap core JS-->
+<script src="/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="/js/scripts.js"></script>
+
+</html>

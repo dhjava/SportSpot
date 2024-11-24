@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko-KR" xmlns:th="http://www.thymeleaf.org">
+<!-- 마이페이지 레이아웃 -->
+<div class="row">
+  <!-- 메뉴바 -->
+  <nav class="col-md-4 col-lg-3 bg-light p-3 d-flex flex-column align-items-center">
+    <ul class="nav flex-row flex-wrap flex-md-column w-100 text-center menu-items justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{'/mypage/modify'}">회원정보 수정</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenu" data-bs-toggle="dropdown" aria-expanded="false">
+          나의 컨텐츠
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+          <li><a class="dropdown-item" th:href="@{'/mypage/myContents/myPlace'}">등록한 장소</a></li>
+          <li><a class="dropdown-item" th:href="@{'/mypage/myContents/bookmark'}">북마크</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</html>

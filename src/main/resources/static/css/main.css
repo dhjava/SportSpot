@@ -155,4 +155,31 @@ header {
     }
 }
 
+.mypage{
+    nav {
+        height: auto; /* 기본 높이 */
+    }
 
+    nav ul.nav {
+        gap: 10px; /* 메뉴 간격 */
+    }
+
+    @media (max-width: 767px) { /* 작은 화면 */
+        nav ul.nav {
+            flex-direction: row; /* 메뉴 가로 배치 */
+            text-align: center;
+        }
+    }
+
+    .menu-title {
+        color: #000 !important; /* 제목은 검정색 고정 */
+    }
+
+    .menu-items .nav-link {
+        color: #6c757d !important; /* 메뉴 항목은 Secondary 색상 */
+    }
+
+    .menu-items .nav-link:hover {
+        color: #495057 !important; /* 메뉴 항목 hover 색상 */
+    }
+}
