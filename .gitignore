@@ -41,4 +41,8 @@ out/
 /src/main/resources/static/bootstrap-5.3.3-examples/
 
 ### 임시 제외 ###
-/documents/
+/documents/logo/
+/documents/diagram/
+/documents/sql/
+/documents/스크린샷/
+/documents/zipcode_DB/
