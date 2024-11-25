@@ -7,6 +7,9 @@
 + 시설 및 러닝 코스에 대한 위치와 설명을 직접 작성할 수 있습니다.
 + 북마크 기능을 이용해 본인이 선호하는 운동 시설을 따로 확인할 수 있습니다.
 
+### 개발 목적
+ + SportSpot 프로젝트의 목적은 Spring Boot를 활용하여 웹 애플리케이션을 개발하는 과정에서 프레임워크의 핵심 개념과 기능을 학습하고 이를 실제 프로젝트에 적용하여 실무 역량을 강화시키기 위함.
+
 ## 1. 개발 환경
  + Front-End : HTML, JS, CSS
  + Back-End : SpringBoot(JAVA 17), MySQL
@@ -17,18 +20,43 @@
 
 ### 1. SpringBoot
 + 여러 객체 간 유용한 관리를 위해 JAVA17 버전을 이용한 Spring으로 백엔드 개발.
-+ Spring의 간편한 설정을 위해 SpringBoot 사용.
++ SpringBoot로 최신 버전 호환 및 설정 용이함.
 
-### 2. IDE 및 에디터
-+ IntelliJ : JAVA 개발 시 자주 사용하는 IDE.
-+ VSCode : JavaScript 개발 및 README 파일 수정 시 편리함.
+### 2. 사용 IDE
++ IntelliJ : JAVA 개발 시 자주 사용하는 IDE이며 프론트엔드 작업 및 DB 구축까지 쉽게 할 수 있어 사용함.
 
 ## 2. 개발 기간
 + 전체 개발 기간 : 2024.10.14 ~ 
 + 프로젝트 구상 : 2024.10.14 ~ 2024.10.16
-+ ERD, 기능, 화면 설계 : 2024.10.21 ~
-(추가 예정)
++ ERD, 기능, 화면 설계 : 2024.11.01 ~ 2024.11.24
++ DB 구축 및 백엔드 개발 : 2024.11.25 ~
+(1월 완성 목표)
 
-## 3. 설계
+## 3. 디렉터리(업데이트 중)
+```
+src
+├─generated
+├─java
+│  └─com
+│      └─dh
+│          └─sportspot
+│              └─Controller
+└─resources
+    ├─static
+    │  ├─aa
+    │  ├─assets
+    │  ├─css
+    │  └─js
+    └─templates
+        ├─board
+        │  ├─free
+        │  └─notice
+        ├─facility
+        │  └─futsal
+        ├─fragments
+        ├─member
+        └─mypage
+            └─myContents
+```
 
 ## 4. 트러블슈팅
