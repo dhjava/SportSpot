@@ -5,30 +5,30 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/member")
-public class MemberController {
+@RequestMapping("/user")
+public class UserController {
     @GetMapping("login")
     public String login() {
-        return "member/login";
+        return "user/login";
     }
 
     @GetMapping("signup")
     public String signup() {
-        return "member/signup";
+        return "user/signup";
     }
 
     @GetMapping("idFind")
     public String idFind() {
-        return "member/idFind";
+        return "user/idFind";
     }
 
     @GetMapping("idFind-submit")
     public String idFindSubmit() {
-        return "member/idFind-submit";
+        return "user/idFind-submit";
     }
 
     @GetMapping("pwFind")
     public String pwFind() {
-        return "member/pwFind";
+        return "user/pwFind";
     }
 }
