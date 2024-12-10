@@ -44,17 +44,16 @@ public class User implements UserDetails {
     @Column(length = 20)
     private String uRegionB;
 
-    // 권한을 저장하기 위한 필드 (콤마로 구분된 문자열 형태로 저장)
-    @Column(length = 255, nullable = false)
-    private String roles; // 예: "ROLE_USER,ROLE_ADMIN"
+    // 권한을 저장하기 위한 필드 (콤마로 구분된 한 글자 권한 값)
+    @Column(length = 20, nullable = false)
+    private String roles; // 예: "admin, member, manager, banned"
 
     // UserDetails 메서드 구현
-
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         // roles 필드를 ','로 분리하여 GrantedAuthority 객체 리스트로 변환
         return List.of(roles.split(",")).stream()
-                .map(SimpleGrantedAuthority::new)
+                .map(role -> new SimpleGrantedAuthority("ROLE_" + role)) // "ROLE_" 접두어를 붙여 권한을 생성
                 .collect(Collectors.toList());
     }
 

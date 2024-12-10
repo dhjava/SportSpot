@@ -44,6 +44,30 @@
                         <div class="card-footer text-center">
                             <small>계정이 없으신가요? <a th:href="@{'signup'}">회원가입</a></small>
                         </div>
+                        <!-- 로그인 실패 시 모달 띄우기 -->
+                        <div th:if="${session.loginError}" class="modal fade" id="loginErrorModal" tabindex="-1" aria-labelledby="loginErrorModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="loginErrorModalLabel">Login Failed</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p th:text="${session.loginError}">올바른 ID와 비밀번호를 입력해주십시오.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 페이지 로딩 시 모달 자동으로 열기 -->
+                        <script th:if="${session.loginError}" type="text/javascript">
+                            var myModal = new bootstrap.Modal(document.getElementById('loginErrorModal'), {
+                                keyboard: false
+                            });
+                            myModal.show();
+                        </script>
                     </div>
                 </div>
             </div>
