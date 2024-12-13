@@ -1,6 +1,6 @@
-package com.dh.sportspot.Repository;
+package com.dh.sportspot.repository;
 
-import com.dh.sportspot.Entity.User;
+import com.dh.sportspot.entity.user.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

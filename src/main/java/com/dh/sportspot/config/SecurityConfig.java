@@ -1,4 +1,4 @@
-package com.dh.sportspot.Config;
+package com.dh.sportspot.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
